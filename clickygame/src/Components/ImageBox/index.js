@@ -14,12 +14,12 @@ class ImageBox extends Component {
     }
 }
 
-ImageBox.propTypes = {
-    onClick: propTypes.func,
-    src: PropTypes.string.isRequired,
-    alt: PropTypes.string.isRequired,
-    chosenBefor: PropTypes.bool.isRequired,
-}
+// ImageBox.PropTypes = {
+//     onClick: PropTypes.func,
+//     src: PropTypes.string.isRequired,
+//     alt: PropTypes.string.isRequired,
+//     chosenBefor: PropTypes.bool.isRequired,
+// }
 
 ImageBox.defaultProps = {
     onClick: () => {},

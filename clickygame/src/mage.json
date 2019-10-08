@@ -1,0 +1,52 @@
+[
+    {
+        "id": 1,
+        "name": "Frostbolt",
+        "image": "/frostbolt.jpg"
+    },
+    {
+        "id": 2,
+        "name": "Frost Nova",
+        "image": "frostnova.jpg"
+    },
+    {
+        "id": 3,
+        "name": "Fireball",
+        "image": "fireball.jpg"
+    },
+    {
+        "id": 4,
+        "name": "Arcane Explosion",
+        "image": "arcaneexplosion.jpg"
+    },
+    {
+        "id": 5,
+        "name": "Blink",
+        "image": "blink.jpg"
+    },
+    {
+        "id": 6,
+        "name": "Blizzard",
+        "image": "blizzard.jpg"
+    },
+    {
+        "id": 7,
+        "name": "Flame Strike",
+        "image": "flamestrike.jpg"
+    },
+    {
+        "id": 8,
+        "name": "Mage",
+        "image": "mageicon.jpg"
+    },
+    {
+        "id": 9,
+        "name": "Arcare Missles",
+        "image": "arcanemiss.jpg"
+    },
+    {
+        "id": 10,
+        "name": "Frostbolt",
+        "image": "frostbolt.jpg"
+    }
+]

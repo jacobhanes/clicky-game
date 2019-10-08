@@ -6,7 +6,7 @@ class ScoreBox extends Component {
         const {score, tries} = this.props;
 
         return(
-            <div>
+            <div height="500px">
                 <span>`Tries: {tries}`</span>
                 <span>`Score: {score}`</span>
             </div>
@@ -14,9 +14,9 @@ class ScoreBox extends Component {
     }
 }
 
-ScoreBox.PropTypes = {
-    score: PropTypes.number.isRequired,
-    tries: PropTypes.number.isRequired,
-}
+// ScoreBox.PropTypes = {
+//     score: PropTypes.number.isRequired,
+//     tries: PropTypes.number.isRequired,
+// }
 
 export default ScoreBox;

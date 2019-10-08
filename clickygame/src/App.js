@@ -1,26 +1,65 @@
-import React from 'react';
-import logo from './logo.svg';
-import './App.css';
+import React, { Component} from 'react';
+import ScoreBox from "./Components/ScoreBox/index";
+import ImageBox from "./Components/ImageBox/index";
+import images from "./mage.json";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+class App extends Component {
+  initialState = {
+      score: 0,
+      tries: 0,
+      images,
+     
+  };
+
+  state = {
+		...this.initialState
+  }
+
+  
+  // handleScore = () => {
+
+  //   // todo once img made
+  // }
+  
+  // handleImageClick = (image) => {
+  //   // todo
+    
+  //   this.setState({
+        
+  //       chosenImages: this.state[image]? this.state.images : this.state.chosenImages,
+
+  //   })
+  // }
+
+  resetGame = () => {
+		this.setState(this.initialState);
+	}
+  
+  
+  render(){
+
+    return (
+      <div className="App">
+      {this.state.images.map(picture => (
+    <ImageBox 
+     key={picture.id} src={`/${picture.image}.jpg`} alt={picture.name}  
+    />
+    ))}
+    <ScoreBox 
+        tries={this.state.tries}
+        score={this.state.score}
+    />
     </div>
-  );
+        
+   )
 }
+
+}
+        
+        
+        
+        
+        
+        
 
 export default App;
